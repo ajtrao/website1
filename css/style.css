@@ -1,0 +1,19 @@
+#box1{
+    height:250px;
+    width: 250px;
+    border:solid black;
+    text-align: center;
+    font-size: 77px;
+    background: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 3s;  
+    animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes example {
+    from {left: 0%;}
+    to {left: 100%;}
+     
+}
