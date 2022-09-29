@@ -14,6 +14,7 @@ console.log(car);
 console.log(car.model);
 
 //array of objects
+//car
 var car_1=[
     {
     name:"bmw",
@@ -28,7 +29,7 @@ var car_1=[
     ]
 console.log(car_1.model);
 
-
+// bike
 var bike =
 {
     brand : "Royal Enfield",
@@ -59,3 +60,28 @@ var bike_1= [
     }
     ]
 console.log(bike_1);
+
+// mobie 
+
+var mobile=[
+    {
+        mobile_brand:"iphone",
+        mobile_model:"14",
+        mobile_year:"2022"
+
+    },
+    {
+        mobile_brand:"iphone",
+        mobile_model:"14 pro",
+        mobile_year:"2022"
+
+    },
+    {
+        mobile_brand:"iphone",
+        mobile_model:"14 pro max",
+        mobile_year:"2022"
+
+    }
+]
+
+console.log(mobile);
