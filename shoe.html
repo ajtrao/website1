@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> shoe function</title>
+    </head>
+    <body>
+        <h1> Shoe info</h1>
+        <button onclick="shoe()">shoe info</button>
+        <p id="info"></p>
+        <p id="info1"></p>
+        
+        <script>
+            function shoe(){
+                let shoes = [{
+                    shoeId: 1,
+                    shoeName:"puma",
+                    shoeColor: "white",
+                    shoePrice:44,
+                    shoeReview:84
+                },{
+                    shoeId: 2,
+                    shoeName:"puma",
+                    shoeColor: "black",
+                    shoePrice:50,
+                    shoeReview: 500
+                },{
+                    shoeId: 3,
+                    shoeName:"puma",
+                    shoeColor: "black",
+                    shoePrice:70,
+                    shoeReview:300
+                }]
+                //console.log(shoes);
+                // only show name of the shoes
+                /*console.log(shoes[0].shoeName);
+                console.log(shoes[1].shoeName);
+                console.log(shoes[2].shoeName);*/
+                
+                //for loop 
+                //statement1= declaration
+                // if shoe price is less tahn 60 need to display shoereview
+                for(var i=0; i<shoes.length; i=i+1){
+                    if(shoes[i].shoePrice < 60 || shoes[i].shoeReview > 100){
+                        //console.log(shoes[i].shoeColor);
+                        document.getElementById("info").innerHTML = shoes[i].shoeColor;
+                        document.getElementById("info1").innerHTML = shoes[i].shoeReview;
+                        //console.log(shoes[i].shoeReview);
+                    }
+                //console.log(shoes[i].shoePrice);
+                }
+        }
+        </script>
+    </body>
+
+</html>
