@@ -1,0 +1,36 @@
+<html>
+<body>
+    <h2>Functions on click
+    </h2>
+    <button onclick="myFunction(1,3)">sum of two digits</button>
+    <p id="demo"></p>
+    <p><button onmouseover="somOfNum(0,0,10)">sum first 10 digits</button></p>
+    <p id="demo1"></p>
+    <p><button onclick="printOddNumbers(0,1,10)">sum odd numbers from 1 to 10 digits</button></p>
+    <p id="odd"></p>
+    <script>
+    // sum of two digits
+        function myFunction(a,b) {
+            var a,b;
+            document.getElementById("demo").innerHTML = a+b;
+        }
+    // sum of first 10 digits
+        function somOfNum(x,y,z){
+            var output=x;
+            for (var i=y; i<=z ;i++ ){
+                output = output+i;
+            }
+            document.getElementById("demo1").innerHTML = output ;
+    }
+     // sum of first 10 odd numbers
+        function printOddNumbers(x,y,z){
+            var sumOfOdd =x;
+            for(var i=y; i<=z; i=i+2){
+                sumOfOdd=sumOfOdd+i;
+            }    
+        document.getElementById("odd").innerHTML = sumOfOdd ;
+        }
+    </script>
+
+</body>
+</html>
